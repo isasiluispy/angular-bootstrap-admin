@@ -1,18 +1,14 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {FullLayoutComponent} from '../layout/full-layout/full-layout.component';
-import {SimpleLayoutComponent} from '../layout/simple-layout/simple-layout.component';
 
 const routes: Routes = [
   {
-    path: 'simple',
-    component: SimpleLayoutComponent,
-    children: [
-      {path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule)},
-    ]
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then(m => m.LoginModule)
   },
   {
-    path: 'full',
+    path: '',
     component: FullLayoutComponent,
     children: [
       {path: '', redirectTo: 'dashboard', pathMatch: 'prefix'},
