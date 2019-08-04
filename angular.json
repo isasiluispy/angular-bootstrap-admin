@@ -29,7 +29,6 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles/dashboard.scss",
               "src/styles/styles.scss"
             ],
             "scripts": []
