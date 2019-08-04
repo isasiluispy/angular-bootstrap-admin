@@ -4,6 +4,10 @@ import { FullLayoutComponent } from './full-layout.component';
 import {HeaderComponent} from '../components/header/header.component';
 import {SidebarComponent} from '../components/sidebar/sidebar.component';
 import {RouterModule} from '@angular/router';
+import {Home, File, ShoppingCart, Users, BarChart2, Layers, PlusCircle, FileText} from 'angular-feather/icons';
+import {FeatherModule} from 'angular-feather';
+
+const icons = {Home, File, ShoppingCart, Users, BarChart2, Layers, PlusCircle, FileText};
 
 @NgModule({
   declarations: [
@@ -13,8 +17,12 @@ import {RouterModule} from '@angular/router';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FeatherModule.pick(icons)
   ],
-  exports: [FullLayoutComponent]
+  exports: [
+    FullLayoutComponent,
+    FeatherModule
+  ]
 })
 export class FullLayoutModule { }

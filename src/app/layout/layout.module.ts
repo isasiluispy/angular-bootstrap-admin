@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 import {SimpleLayoutModule} from './simple-layout/simple-layout.module';
 import {FullLayoutModule} from './full-layout/full-layout.module';
 
@@ -12,4 +12,5 @@ import {FullLayoutModule} from './full-layout/full-layout.module';
     FullLayoutModule
   ]
 })
-export class LayoutModule { }
+export class LayoutModule {
+}
