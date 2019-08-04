@@ -16,6 +16,8 @@ Provides fast, reliable and extensible starter for the development of Angular pr
 *   angular-v8.0.3
 *   angular/cli-v8.0.3
 *   [ng-bootstrap-v5.1.0](https://github.com/ng-bootstrap/)
+*   [chart.js-v2.8.0](https://www.chartjs.org/)
+*   [ng2-charts-v2.3.0](https://github.com/valor-software/ng2-charts)
 *   Following the best practices.
 *   Ahead-of-Time compilation support.
 *   Official Angular i18n support.
